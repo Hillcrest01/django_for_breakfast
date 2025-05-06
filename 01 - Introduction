@@ -1,0 +1,30 @@
+Django is a high-level Python web framework that encourages rapid development and clean, pragmatic design. It follows the model-template-views architectural pattern and is maintained by the Django Software Foundation. Django is used for building web applications of all sizes, from small personal projects to large enterprise-level platforms. It is known for its focus on security, scalability, and maintainability. 
+To start, we first need to ensure python is installed, then install django using **pip install django**
+Verify django is installed by typing python in your shell, then at the Python prompt, try to import django.
+    **>>> import django**
+    **>>> print(django.get_version())**
+    **django version here**
+Should you get anything else apart from django version, then django is not yet installed in your machine and you need to install it again.
+Create  a directory ***mkdir djangotutorial***
+Then run the following command to bootstrap to a new project
+***django-admin startproject mysite djangotutorial*** or ***python -m django startproject mysite djangotutorial***
+This will create the following files:
+• manage.py: A command-line utility that lets you interact with this Django project in various ways.
+You can read all the details about manage.py in django-admin and manage.py.
+• mysite/: A directory that is the actual Python package for your project. Its name is the Python package
+name you’ll need to use to import anything inside it (e.g. mysite.urls).
+• mysite/__init__.py: An empty file that tells Python that this directory should be considered a Python
+package. If you’re a Python beginner, read more about packages in the official Python docs.
+• mysite/settings.py: Settings/configuration for this Django project. Django settings will tell you all
+about how settings work.
+• mysite/urls.py: The URL declarations for this Django project; a“table of contents”of your Djangopowered site. You can read more about URLs in URL dispatcher.
+• mysite/asgi.py: An entry-point for ASGI-compatible web servers to serve your project. See How to
+deploy with ASGI for more details.
+• mysite/wsgi.py: An entry-point for WSGI-compatible web servers to serve your project. See How to
+deploy with WSGI for more details.
+
+To verify if the django project works, navigate to the djangotutorial directory and run the following commands:
+** python manage.py runserver**
+Starting development server at http://127.0.0.1:8000/
+Quit the server with CONTROL-C
+That's what you should see, else then you haven't configured everything well and you need to diagnose the error before proceeding.
